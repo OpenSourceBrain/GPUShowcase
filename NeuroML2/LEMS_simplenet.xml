@@ -1,0 +1,37 @@
+<Lems>
+
+    <!-- This is a file which can be read and executed by the LEMS Interpreter.
+         It imports the LEMS definitions of the core NeuroML 2 Components, 
+         imports in "pure" NeuroML 2 and contains some LEMS elements for running 
+         a simulation -->
+
+
+    <Target component="sim1"/>
+
+    <Include file="Cells.xml"/>
+    <Include file="Networks.xml"/>
+    <Include file="Simulation.xml"/>
+
+
+    <!-- Including file with a <neuroml> root, a "real" NeuroML 2 file -->
+    <Include file="simplenet.nml"/>
+
+
+    <Simulation id="sim1" length="300ms" step="0.01ms" target="simplenet">
+    
+        <Display id="d1" title="Membrane potentials Pop0" timeScale="1ms" xmin="0" xmax="300" ymin="-70" ymax="-45">
+                <Line id="pop0_0_v" quantity="Pop0[0]/v" scale="1mV" color="#ffffff" timeScale="1ms"/>
+                <Line id="pop0_1_v" quantity="Pop0[1]/v" scale="1mV" color="#f00fff" timeScale="1ms"/>
+                <Line id="pop0_2_v" quantity="Pop0[2]/v" scale="1mV" color="#fff00f" timeScale="1ms"/>
+        </Display>
+        
+        <Display id="d2" title="Membrane potentials Pop1" timeScale="1ms" xmin="0" xmax="300" ymin="-70" ymax="-45">
+                <Line id="pop1_0_v" quantity="Pop1[0]/v" scale="1mV" color="#fff00f" timeScale="1ms"/>
+                <Line id="pop1_1_v" quantity="Pop1[1]/v" scale="1mV" color="#fee00a" timeScale="1ms"/>
+                <Line id="pop1_2_v" quantity="Pop1[2]/v" scale="1mV" color="#ffaa0f" timeScale="1ms"/>
+        </Display>
+        
+    </Simulation>
+
+
+</Lems>
