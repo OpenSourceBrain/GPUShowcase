@@ -1,2 +1,8 @@
-GPUShowcase
-===========
+GPU Based Neuronal Simulation
+=============================
+
+For more details see: http://www.opensourcebrain.org/projects/gpushowcase
+
+The main purpose of this OSB project is to compile a list of GPU based simulation initiatives, linking to downloadable code & publications. See here for more: http://www.opensourcebrain.org/projects/gpushowcase/wiki/Wiki
+
+This GitHub repository is intended for code snippets and examples which can be run on some of the featured platforms.
