@@ -1,0 +1,8 @@
+x86_64
+i386
+umac
+*.dll
+NeuroML2/*.dat
+NeuroML2/*.hoc
+NeuroML2/*.mod
+NeuroML2/*nrn.py
