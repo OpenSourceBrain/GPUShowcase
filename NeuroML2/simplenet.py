@@ -14,7 +14,7 @@ from random import random
 nml_doc = neuroml.NeuroMLDocument(id="simplenet")
 
 # Define integrate & fire cell 
-iaf0 = neuroml.IaFCell(id="iaf0", C="1.0 nF",
+iaf0 = neuroml.IafCell(id="iaf0", C="1.0 nF",
                            thresh = "-50mV",
                            reset="-65mV",
                            leak_conductance="10 nS",
@@ -93,6 +93,6 @@ print("Written network file to: "+nml_file)
 
 ###### Validate the NeuroML ######    
 
-from neuroml.utils import validateNeuroML2
+from neuroml.utils import validate_neuroml2
 
-validateNeuroML2(nml_file)
+validate_neuroml2(nml_file)

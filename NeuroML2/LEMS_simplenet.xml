@@ -31,6 +31,21 @@
                 <Line id="pop1_2_v" quantity="Pop1[2]/v" scale="1mV" color="#ffaa0f" timeScale="1ms"/>
         </Display>
         
+        <OutputFile id="of0" fileName="Pop0_v.dat">
+            <OutputColumn id="v" quantity="Pop0[0]/v" />
+            <OutputColumn id="v" quantity="Pop0[1]/v" />
+            <OutputColumn id="v" quantity="Pop0[2]/v" />
+            <OutputColumn id="v" quantity="Pop0[3]/v" />
+            <OutputColumn id="v" quantity="Pop0[4]/v" />
+        </OutputFile>
+        <OutputFile id="of1" fileName="Pop1_v.dat">
+            <OutputColumn id="v" quantity="Pop1[0]/v" />
+            <OutputColumn id="v" quantity="Pop1[1]/v" />
+            <OutputColumn id="v" quantity="Pop1[2]/v" />
+            <OutputColumn id="v" quantity="Pop1[3]/v" />
+            <OutputColumn id="v" quantity="Pop1[4]/v" />
+        </OutputFile>
+        
     </Simulation>
 
 
