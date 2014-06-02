@@ -10,3 +10,5 @@ This GitHub repository is intended for code snippets and examples which can be r
 There is already a [simple NeuroML2 network](https://github.com/OpenSourceBrain/GPUShowcase/tree/master/NeuroML2) which could serve as the basis for examples to run on different platforms.
 
 [![Build Status](https://travis-ci.org/OpenSourceBrain/GPUShowcase.svg)](https://travis-ci.org/OpenSourceBrain/GPUShowcase)
+
+
