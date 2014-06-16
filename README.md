@@ -1,5 +1,4 @@
-GPU Based Neuronal Simulations
-==============================
+### GPU Based Neuronal Simulations
 
 The main purpose of this OSB project is to compile a list of GPU based simulation initiatives, linking to downloadable code & publications. 
 
