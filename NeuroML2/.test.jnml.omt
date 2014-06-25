@@ -2,3 +2,16 @@
  
 target: LEMS_simplenet.xml 
 engine: jNeuroML
+implements:
+  mep: .test.mep
+  experiment: Pop1_cell4
+  observables:
+    spike times:
+      file: 
+        path: Pop1_v.dat
+        columns: [0,4]
+        scaling: [1000, 1000]
+      spike detection: 
+        method: threshold
+        threshold: -55
+      tolerance: 0.01

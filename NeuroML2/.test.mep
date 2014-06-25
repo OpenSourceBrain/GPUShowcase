@@ -1,0 +1,6 @@
+system: Testing a single cell activity
+
+experiments:
+    Pop1_cell4:
+        expected:
+            spike times: [24.23, 41.34, 56.67, 71.67, 87.58, 101.93, 117.3, 132.09, 146.76, 162.3, 176.61, 191.64, 206.8, 221.28, 236.78, 251.38, 266.27, 281.81, 296.19]
