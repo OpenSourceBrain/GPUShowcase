@@ -11,6 +11,7 @@ install:
 script:
     - omv all
     - pwd
+    - ls -alt
     - ls -alt NeuroML2
     
     
