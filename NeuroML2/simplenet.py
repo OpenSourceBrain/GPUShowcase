@@ -9,7 +9,9 @@ throught libNeuroML, save it as XML and validate it
 #########################################################
 
 import neuroml
-from random import random
+
+import random
+random.seed(12345)
 
 nml_doc = neuroml.NeuroMLDocument(id="simplenet")
 
@@ -48,14 +50,14 @@ proj1 = neuroml.Projection(id="Proj0", synapse=syn0.id,
                         postsynaptic_population=pop1.id)
 net.projections.append(proj1)
 
-
+conn_count = 0
 for pre in range(0,size0):
 
     # Create a number of random amplitude current pulses 
     pg = neuroml.PulseGenerator(id="input%i"%pre,
                                 delay="0ms",
                                 duration="500ms",
-                                amplitude="%fnA"%(0.5+random()))
+                                amplitude="%fnA"%(0.5+random.random()))
     nml_doc.pulse_generators.append(pg)
 
     # Add these to cells
@@ -71,12 +73,13 @@ for pre in range(0,size0):
     # Connect cells with defined probability
     prob_connection = 0.5
     for post in range(0,size1):
-      if random() <= prob_connection:
+      if random.random() <= prob_connection:
         conn = \
-          neuroml.Connection( \
+          neuroml.Connection(id=conn_count, \
                    pre_cell_id="../%s[%i]"%(pop0.id,pre),
                    post_cell_id="../%s[%i]"%(pop1.id,post))
         proj1.connections.append(conn)
+        conn_count+=1
         
             
 #########################################################

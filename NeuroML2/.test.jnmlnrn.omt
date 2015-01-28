@@ -26,12 +26,12 @@ experiments:
           method: threshold
           threshold: -55
         tolerance: 0
-  Pop1_cell4:
+  Pop1_cell1:
     observables:
       spike times:
         file: 
           path: Pop1_v.dat
-          columns: [0,5]
+          columns: [0,2]
           scaling: [1000, 1000]
         spike detection: 
           method: threshold
